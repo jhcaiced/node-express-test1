@@ -28,7 +28,9 @@ const config = {
     apiRoot: process.env.API_ROOT || '',
     masterKey: requireProcessEnv('MASTER_KEY')
   },
-  test: { },
+  test: {
+    url: 'http://localhost:9000'
+  },
   development: {
   },
   production: {

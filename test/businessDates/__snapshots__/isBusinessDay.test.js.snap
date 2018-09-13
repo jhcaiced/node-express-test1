@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Is Business Day Determine if a given date is a business day 1`] = `"{\\"ok\\":true,\\"initialQuery\\":{\\"date\\":\\"2018-11-12\\"},\\"results\\":{\\"isBusinessDate\\":false}}"`;
+
+exports[`Is Business Day Determine if a given date is a business day 2`] = `"{\\"ok\\":true,\\"initialQuery\\":{\\"date\\":\\"2018-11-11\\"},\\"results\\":{\\"isBusinessDate\\":false}}"`;
+
+exports[`Is Business Day Determine if a given date is a business day 3`] = `"{\\"ok\\":true,\\"initialQuery\\":{\\"date\\":\\"2018-11-13\\"},\\"results\\":{\\"isBusinessDate\\":true}}"`;

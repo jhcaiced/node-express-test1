@@ -1,7 +1,6 @@
 import { Router } from 'express'
 import businessDates from '../routes/businessDates'
-const BUSINESS_DATES_PREFIX = '/api/v1/businessDates'
-
+import routePrefixes from './constants'
 const router = new Router()
 
 /**
@@ -27,5 +26,5 @@ const router = new Router()
  * @apiParam {String[]} [sort=-createdAt] Order of returned items.
  * @apiParam {String[]} [fields] Fields to be returned.
  */
-router.use(BUSINESS_DATES_PREFIX, businessDates)
+router.use(routePrefixes.BUSINESS_DATES_PREFIX, businessDates)
 export default router

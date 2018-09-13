@@ -8,7 +8,7 @@ moment.locale('us', {
 })
 
 function addBusinessDays (date, days) {
-  return moment(date).businessAdd(parseInt(days))
+  return moment(date).businessAdd(parseInt(days)).format('YYYY-MM-DD')
 }
 
 function differenceInDays (dateStart, dateEnd) {
@@ -19,8 +19,8 @@ function isBusinessDay (date) {
   return moment(date).isBusinessDay()
 }
 
-function isWeekendDay (aMoment) {
-  return [0, 6].includes(aMoment.day())
+function isWeekendDay (date) {
+  return [0, 6].includes(moment(date).day())
 }
 
 function countWeekendAndHolidayDays (dateStart, dateEnd) {
@@ -44,6 +44,7 @@ function countWeekendAndHolidayDays (dateStart, dateEnd) {
 
 module.exports = {
   isBusinessDay: isBusinessDay,
+  isWeekendDay: isWeekendDay,
   addBusinessDays: addBusinessDays,
   differenceInDays: differenceInDays,
   countWeekendAndHolidayDays: countWeekendAndHolidayDays

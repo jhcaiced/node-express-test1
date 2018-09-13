@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Settlement Transfer Date Estimate Should calculate a Settlement Transfer Date Estimate 1`] = `"{\\"ok\\":true,\\"initialQuery\\":{\\"initialDate\\":\\"2018-11-10T10:10:10Z\\",\\"delay\\":3},\\"results\\":{\\"businessDate\\":\\"2018-11-15T10:10:10.000Z\\",\\"totalDays\\":5,\\"holidayDays\\":1,\\"weekendDays\\":2}}"`;
+exports[`Settlement Transfer Date Estimate Should calculate a Settlement Transfer Date Estimate 1`] = `"{\\"ok\\":true,\\"initialQuery\\":{\\"initialDate\\":\\"2018-11-10T10:10:10Z\\",\\"delay\\":3},\\"results\\":{\\"businessDate\\":\\"2018-11-15\\",\\"totalDays\\":4,\\"holidayDays\\":1,\\"weekendDays\\":2}}"`;
 
-exports[`Settlement Transfer Date Estimate Should calculate a Settlement Transfer Date Estimate 2`] = `"{\\"ok\\":true,\\"initialQuery\\":{\\"initialDate\\":\\"2018-11-15T10:10:10Z\\",\\"delay\\":3},\\"results\\":{\\"businessDate\\":\\"2018-11-20T10:10:10.000Z\\",\\"totalDays\\":5,\\"holidayDays\\":0,\\"weekendDays\\":2}}"`;
+exports[`Settlement Transfer Date Estimate Should calculate a Settlement Transfer Date Estimate 2`] = `"{\\"ok\\":true,\\"initialQuery\\":{\\"initialDate\\":\\"2018-11-15T10:10:10Z\\",\\"delay\\":3},\\"results\\":{\\"businessDate\\":\\"2018-11-20\\",\\"totalDays\\":4,\\"holidayDays\\":0,\\"weekendDays\\":2}}"`;
 
-exports[`Settlement Transfer Date Estimate Should calculate a Settlement Transfer Date Estimate 3`] = `"{\\"ok\\":true,\\"initialQuery\\":{\\"initialDate\\":\\"2018-12-25T10:10:10Z\\",\\"delay\\":20},\\"results\\":{\\"businessDate\\":\\"2019-01-24T10:10:10.000Z\\",\\"totalDays\\":30,\\"holidayDays\\":3,\\"weekendDays\\":8}}"`;
+exports[`Settlement Transfer Date Estimate Should calculate a Settlement Transfer Date Estimate 3`] = `"{\\"ok\\":true,\\"initialQuery\\":{\\"initialDate\\":\\"2018-12-25T10:10:10Z\\",\\"delay\\":20},\\"results\\":{\\"businessDate\\":\\"2019-01-24\\",\\"totalDays\\":29,\\"holidayDays\\":3,\\"weekendDays\\":8}}"`;

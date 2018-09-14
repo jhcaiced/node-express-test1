@@ -8,7 +8,7 @@ module.exports = (req, res) => {
     initialQuery: params,
     results: {
       businessDate: nextBusinessDate,
-      totalDays: businessDates.differenceInDays(params.initialDate, nextBusinessDate),
+      totalDays: businessDates.totalDays(params.initialDate, nextBusinessDate),
       holidayDays: holidayDays,
       weekendDays: weekendDays
     }

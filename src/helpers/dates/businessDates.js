@@ -12,7 +12,11 @@ function addBusinessDays (date, days) {
 }
 
 function differenceInDays (dateStart, dateEnd) {
-  return moment(dateEnd).diff(moment(dateStart), 'days')
+  return moment(dateEnd).startOf('day').diff(moment(dateStart).startOf('day'), 'days')
+}
+
+function totalDays (dateStart, dateEnd) {
+  return differenceInDays(dateStart, moment(dateEnd).add(1, 'day'))
 }
 
 function isBusinessDay (date) {
@@ -47,5 +51,6 @@ module.exports = {
   isWeekendDay: isWeekendDay,
   addBusinessDays: addBusinessDays,
   differenceInDays: differenceInDays,
+  totalDays: totalDays,
   countWeekendAndHolidayDays: countWeekendAndHolidayDays
 }

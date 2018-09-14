@@ -25,4 +25,11 @@ describe('Business Dates Operations', () => {
     expect(dates.differenceInDays('2018-11-15', '2018-11-20')).toBe(5)
     expect(dates.differenceInDays('2018-12-25', '2019-01-24')).toBe(30)
   })
+
+  it('Total days - including start and end date', () => {
+    expect(dates.totalDays('2018-11-12', '2018-11-15')).toBe(4)
+    expect(dates.totalDays('2018-11-10', '2018-11-15')).toBe(6)
+    expect(dates.totalDays('2018-11-15', '2018-11-20')).toBe(6)
+    expect(dates.totalDays('2018-12-25', '2019-01-24')).toBe(31)
+  })
 })
